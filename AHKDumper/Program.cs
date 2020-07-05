@@ -37,7 +37,7 @@ namespace AHKDumper
             {
                 string displayName = directory.Name ?? "ID: " + directory.Id;
 
-                if ( displayName.Contains( "AHK" ) )
+                if ( displayName.Contains( "AHK" ) || displayName.Contains( "AUTOHOTKEY" ) )
                 {
                     Console.WriteLine( "Found AHK resource: {0}", displayName );
                     if ( entry.IsData )
